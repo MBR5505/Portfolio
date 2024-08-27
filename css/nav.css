@@ -1,8 +1,41 @@
-.logo{
-    border-radius: 180px;
-    background-color: var(--background-color);
+
+
+.navUL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: sticky;
 }
 
-li {
-    color: var(--background-color);
+a{
+    text-decoration:none;
+    color: var(--text-color);
+}
+
+li{
+    list-style-type: none;
+
+    padding: 30px;
+    padding-top: 60px;
+
+    background-color: var(--primary-color);
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li:hover{
+    background-color: var(--secondary-color);
+}
+
+.logoLI{
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: none;
 }
