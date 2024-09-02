@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.pokedex-title {
+    text-align: center;
+    color: #b30000;
+}
+
+.konteirer {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 5px solid #b30000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    position: relative;
+}
+
+.konteirerS {
+    display: none;
+}
+
+.konteirerS.active {
+    display: block;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+.searchButton {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+    background-color: #ff4d4d;
+}
+
+.pokemon {
+    position: relative;
+    background-image: url(bilder/pokedex.jpg);
+    background-position: center;
+    background-position: left 0px center;
+
+    background-size: cover;
+
+}
+
+.pokemon img {
+    max-width: 200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pokemon .pokemon-details {
+    margin-top: 50px;
+}
+
+.description {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pokemonImg{
+    /* background-image: url(bilder/depositphotos_120454410-stock-illustration-pokeball-seamless-pattern.jpg); */
+    background-position: center;
+    background-size: cover;
+    
+    margin-right: 15%;
+    margin-top: 25%;
+    scale: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    .konteirer {
+        max-width: 90%;
+    }
+}
+
+.itemImg{
+    scale: 3;
+}

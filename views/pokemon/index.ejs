@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <script src="/js/pokemon/script.js" defer></script>
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/pokemon/style.css">
+    <link rel="stylesheet" href="/pokemon/flavors.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="navUL">
+          <li><a href="/omMeg">Om meg</a></li>
+          <li><a href="/utvikling">Prosjekter-utvikling</a></li>
+          <li class="logoLI"><a href="/"><h1>Portfolio</h1><p>-Martin Bjor Røneid</p></a></li>
+          <li><a href="/design">Prosjekter-design</a></li>
+          <li><a href="/kontakt">Kontakt info</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="pokedex-title">POKEDEX</h1>
+    
+    <div class="konteirer">
+        <button class="pokemonButton active" data-side="pokemon">Pokemons</button>
+        <button class="itemButton" data-side="item">Items</button>
+        <button class="berryButton" data-side="berry">Berries</button>
+        <div class="content-container">
+            <div class="pokemonKonteirer konteirerS active">
+                <div class="input">
+                    <input type="text" class="pokeInput" placeholder="Enter Pokemon Name">
+                    <button class="PokesearchButton"><img src="/pokemon/bilder/pokeSearch.png" alt="PokeSearchIcon"></button>
+                </div>
+                <div class="pokemon">  
+                </div>
+            </div>
+            <div class="itemKonteirer konteirerS">
+                <div class="input">
+                    <input type="text" class="itemInput" placeholder="Enter Item Name, e.g. great-ball">
+                    <button class="itemsearchButton"><img src="/pokemon/bilder/pokeSearch.png" alt="PokeSearchIcon"></button>
+                </div>
+                <div class="item">
+                    <img src="" alt="">
+                    <div class="item-details">
+                        <h3></h3>
+                        <p class="description">Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="berryKonteirer konteirerS">
+                <div class="input">
+                    <input type="text" class="berryInput" placeholder="Enter Berry Name">
+                    <button class="berrysearchButton"><img src="/pokemon/bilder/pokeSearch.png" alt="PokeSearchIcon"></button>
+                </div>
+                <div class="berry">
+                    <img src="" alt="">
+                    <div class="berry-details">
+                        <h3></h3>
+                        <p class="description">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

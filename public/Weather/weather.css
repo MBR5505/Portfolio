@@ -1,0 +1,41 @@
+.flex2{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 100vh;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    --width-of-input: 500px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+
+    background-color: #ffffff5f;
+    padding: 10;
+    padding-bottom: 400;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.infoP{
+    opacity: 0.5;
+    background-color: #d3def2;
+    backdrop-filter: blur(100px);
+    width: 480px;
+    height: 80px;
+    transition: ease-in-out .5s;
+
+    overflow: hidden;
+}
+
+.infoP:hover{
+    opacity: 1;
+    height: 800px;
+}

@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/js/weather/forecast.js" defer></script>
+    <link rel="stylesheet" href="/Weather/style.css" />
+    <link rel="stylesheet" href="/Weather/clouds.css" />
+    <link rel="stylesheet" href="/Weather/weather.css" />
+
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/utvikling.css" />
+  </head>
+  <body class="sun">
+
+    <nav>
+      <ul class="navUL">
+        <li><a href="/omMeg">Om meg</a></li>
+        <li><a href="/utvikling">Prosjekter-utvikling</a></li>
+        <li class="logoLI"><a href="/"><h1>Portfolio</h1><p>-Martin Bjor Røneid</p></a></li>
+        <li><a href="/design">Prosjekter-design</a></li>
+        <li><a href="/kontakt">Kontakt info</a></li>
+      </ul>
+    </nav>
+
+    <div class="actualSun"></div>
+
+    <div id="background-wrap">
+      <div class="x1">
+        <div class="cloud"></div>
+        <p class="cloudTextCity"></p>
+      </div>
+      <div class="x2">
+        <div class="cloud"></div>
+        <p class="cloudTextWeather"></p>
+      </div>
+      <div class="x3">
+        <div class="cloud"></div>
+        <p class="cloudTextDegree"></p>
+      </div>
+      <div class="x4">
+        <div class="cloud"></div>
+        <p class="cloudTextCity"></p>
+      </div>
+      <div class="x5">
+        <div class="cloud"></div>
+        <p class="cloudTextWeather"></p>
+      </div>
+    </div>
+
+    <audio id="bg-music" autoplay loop preload="auto" q_auto></audio>
+
+    <audio id="rain">
+      <source src="/Weather/musikk/rain.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="flex2">
+
+      <div class="form">
+        <h1>Vær-app</h1>
+        <h2>I dag:</h2>
+        <label for="by"></label>
+        <input type="text" id="by" class="input" placeholder="By" />
+  
+        <div class="infoKonteirer">
+          <div class="sun"></div>
+  
+          <div class="city"></div>
+          <div class="weather"></div>
+          <div class="degree"></div>
+        </div>
+      </div>
+  
+      <div class="info">
+        <h2>Vær-app</h2>
+        <p class="infoP">Bla bla bla, yap, yap, yap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere modi iste, nisi minus reiciendis aspernatur officiis impedit rem maxime quo quam perspiciatis excepturi aperiam inventore accusantium, vitae amet qui?
+        Voluptas adipisci qui quas quo totam recusandae amet aliquam incidunt molestiae cupiditate excepturi voluptatem soluta alias omnis expedita reprehenderit pariatur commodi nam, optio ex illum impedit ducimus. Earum, rerum veritatis.
+        Tenetur corrupti facilis fugit consequuntur at quidem illo et quod temporibus assumenda tempore voluptas recusandae iste accusamus reiciendis voluptates, provident laboriosam maxime voluptatum. Iusto accusamus quisquam dolorem ipsam animi praesentium?
+        Fuga delectus, non asperiores illo fugiat praesentium minima dolores a placeat reprehenderit perspiciatis quibusdam aperiam labore sit recusandae corrupti officiis libero in, explicabo tempore. Rerum delectus ab aperiam labore vel!
+        Error veniam odio facilis sequi necessitatibus deserunt, illo aliquid libero voluptates quisquam deleniti doloremque a, voluptatibus soluta ea eum? Nostrum quam voluptatum tenetur necessitatibus eum labore velit accusantium blanditiis laboriosam.
+        Adipisci laborum exercitationem vero fugit fuga expedita ab explicabo incidunt sint delectus commodi, ipsa, placeat enim labore odit. Impedit architecto doloribus magni, aliquam ducimus modi eveniet provident sit! Iusto, neque.</p>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="scedule">
+        <h1>Program neste 5 dager:</h1>
+    </div> -->
+  </body>
+</html>

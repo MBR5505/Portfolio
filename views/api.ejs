@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/js/fargeApi.js" defer></script>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/utvikling.css" />
+  </head>
+  <body>
+
+    <nav>
+      <ul class="navUL">
+          <li><a href="/omMeg">Om meg</a> </li>
+          <li><a href="/utvikling">Prosjekter-utvikling</a> </li>
+          <li class="logoLI"><a href="/"><h1>Portfolio</h1> <p>-Martin Bjor Røneid</p></a></li>
+          <li><a href="/design">Prosjekter-design</a> </li>
+          <li><a href="/kontakt">Kontakt info</a> </li>        
+      </ul>
+    </nav>
+
+
+    <div class="grid-container">
+      <div class="info-div">
+        <h2>Information Section</h2>
+        <p>This is the main info div that takes up the full width of its container. 
+          <h3>Choose a Color</h3>
+          <input type="color" id="colorPicker" value="#3498db" /></p>
+      </div>
+
+      <div class="card rain-card">
+        
+        <img src="image1.jpg" alt="Card Image 1" />
+        <a href="/utvikling/api/weather">
+          <div class="overlay">
+            <h2>Weather API</h2>
+            <p>Description for card 1</p>
+          </div>  
+        </a>  
+      </div>
+
+      <div class="card">
+        <img src="image2.jpg" alt="Card Image 2" />
+        <a href="/utvikling/api/pokemon">
+          <div class="overlay">
+            <h2>Card 2</h2>
+            <p>Description for card 2</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script src="/js/rainEffect.js"></script>
+
+
+    
+
+    
+  </body>
+</html>
