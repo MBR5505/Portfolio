@@ -1,11 +1,12 @@
 .navUL {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0;
     margin: 0;
     position: sticky;
     top: 0;
+    width: 100%;
 }
 
 
@@ -26,11 +27,9 @@ li {
 
 li a {
     display: block; 
-    padding: 30px 50px; 
     margin: 0;
 
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 7vh 6.93vw;
 
     background-color: var(--tertiary-color);
 
@@ -79,9 +78,9 @@ li:hover a {
 
 
 .logoLI:hover p {
-    height: auto;  /* Let the height adjust to the content */
-    opacity: 1;  /* Make it visible */
-    transform: translateY(0);  /* Move it back to its original position */
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
