@@ -1,20 +1,38 @@
+:root {
+    --background-color: #faedcd;
+
+    --text-color: #fefae0;
+
+
+    --primary-color: #d4a373;
+    --secondary-color: #ffffff;
+    --tertiary-color: #e9edc9;
+    --quaternary-color: #fefae0;
+}
+
+.selected{
+    background-color: #253743;
+}
+
+
+
 .navUL {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 0;
     margin: 0;
     position: sticky;
     top: 0;
+    width: 100%;
 }
 
 
-a {
+li a {
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-p{
+a p{
     color: var(--secondary-color);
 }
 
@@ -26,11 +44,9 @@ li {
 
 li a {
     display: block; 
-    padding: 30px 50px; 
     margin: 0;
 
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 7vh 6.93vw;
 
     background-color: var(--tertiary-color);
 
@@ -66,22 +82,22 @@ li:hover a {
 
 
 .logoLI p {
-    position: absolute; /* Position the paragraph absolutely */
+    position: absolute;
     left: 50%;
     margin: 0;
     padding: 0;
-    height: 0;  /* Initially hide the paragraph */
+    height: 0; 
     opacity: 0;
-    overflow: hidden;  /* Hide the overflowing text */
-    transform: translateY(-10px);  /* Slightly move it up */
-    transition: all 0.4s ease;  /* Add transition for smooth animation */
+    overflow: hidden;
+    transform: translateY(-10px);  
+    transition: all 0.4s ease;  
 }
 
 
 .logoLI:hover p {
-    height: auto;  /* Let the height adjust to the content */
-    opacity: 1;  /* Make it visible */
-    transform: translateY(0);  /* Move it back to its original position */
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -91,3 +107,12 @@ html, body {
 }
 
 
+.navUL {
+    position: relative;
+    top: -65px;
+    transition: top 0.3s ease;
+}
+
+.navUL:hover {
+    top: 0;
+}

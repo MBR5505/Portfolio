@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om meg</title>
+    <link rel="icon" href="/img/icon.png" type="image/png" />
 
-    <div class="info"></div>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/omMeg.css" />
+    <link rel="stylesheet" href="/design.css" />
+  </head>
+  <body>
+    <a href="/" class="go-back-button">
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M10 19l-7-7 7-7v4h8c2.8 0 5 2.2 5 5s-2.2 5-5 5h-3v-2h3c1.7 0 3-1.3 3-3s-1.3-3-3-3h-8v4z"
+          />
+        </svg>
+      </span>
+      <span class="text">Tilbake</span>
+    </a>
 
-    <div>
-        <a href=""></a>
-        <img src="" alt="">
-        <div>
-            <h2>CV</h2>
-            <p><a href="path/to/your-cv.pdf" download="your-cv.pdf" class="download-btn">Download CV</a></p>
-        </div>
+    <div class="info">
+      <h2>Om meg</h2>
+      <p class="contenttext">
+        Jeg er en engasjert elev ved Bleiker VGS. Jeg har alltid hatt en sterk
+        interesse for alt IT-relatert, og jeg elsker å lære nye ting og utforske
+        kreative løsninger. <br /><br />
+        Selv om jeg fortsatt er tidlig i min karriere, er jeg ivrig etter å ta
+        på meg nye utfordringer og lære mer om både driftfaget og utviklerfaget.
+        Jeg bruker mye av min fritid til å programmere eller lære meg om ny
+        maskinvare, og jeg ser alltid etter måter å anvende det jeg lærer på
+        praktiske prosjekter og aktiviteter.
+        <br /><br />
+        Jeg er klar for å utforske nye muligheter og vokse både personlig og
+        profesjonelt. Jeg ser frem til å ta de neste stegene i min utvikling og
+        bidra med mine ferdigheter og entusiasme til fremtidige prosjekter.
+      </p>
     </div>
-    
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2>Attester og sertifikater</h2>
-            <p></p>
+
+    <div class="container">
+      <div class="box left-box">
+        <a href="/CV/MartinCV.pdf" download="your-cv.pdf">
+          <iframe
+            src="/CV/MartinCV.pdf"
+            width="100%"
+            height="600px"
+            style="border: none"
+          ></iframe>
+        </a>
+      </div>
+      <div class="box right-box">
+        <div class="scrollable-content">
+          <h2>Attester og sertifikater</h2>
+          <p>Long content that is scrollable...</p>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

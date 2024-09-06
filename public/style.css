@@ -1,0 +1,110 @@
+:root {
+    --main-color: #3498db;
+    --secondary-color: #2ecc71;
+    --contrast-color: #e74c3c;
+    --text-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --input-border-color: #bdc3c7;
+    --button-bg-color: var(--main-color);
+    --button-text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    color: var(--main-color);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    color: var(--contrast-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+}
+
+/* Media Queries Liksommm */
+@media (min-width: 768px) {
+    .input-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input {
+        width: 48%;
+    }
+}

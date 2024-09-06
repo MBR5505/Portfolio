@@ -1,0 +1,129 @@
+:root {
+    --background-color: #faedcd;
+
+    --text-color: #fefae0;
+
+
+    --primary-color: #d4a373;
+    --secondary-color: #ffffff;
+    --tertiary-color: #e9edc9;
+    --quaternary-color: #fefae0;
+    --tertiary-color2: #f5f7e5;
+    --quaternary-color: #c0c6de;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    padding-left: 20vw;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--tertiary-color);
+
+    padding-bottom: 10vh;
+
+    margin-top: 5vh;
+
+    border-radius: 2vw;
+}
+
+.info-div {
+    grid-column: span 2;
+    background-color: var(--tertiary-color2);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.card {
+    width: 100%;
+    grid-column: span 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    gap: 1.25rem;
+
+}
+
+.card-right, .card-left {
+    flex-wrap: nowrap;
+    width: 30vw;
+    height: 70vh;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card-right:hover img, .card-left :hover img {
+    filter: blur(5px);
+}
+
+.card-right:hover .overlay, .card-left :hover .overlay {
+    opacity: 1;
+}
+
+.card-right:hover, .card-left :hover {
+    transform: scale(1.05);
+}
+
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    animation: fall 0.5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}

@@ -4,24 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="/js/weather/forecast.js" defer></script>
+    <link rel="icon" href="/img/regn.png" type="image/png">
+
     <link rel="stylesheet" href="/Weather/style.css" />
     <link rel="stylesheet" href="/Weather/clouds.css" />
     <link rel="stylesheet" href="/Weather/weather.css" />
 
-    <link rel="stylesheet" href="/nav.css" />
-    <link rel="stylesheet" href="/utvikling.css" />
+    <link rel="stylesheet" href="/design.css" />
   </head>
-  <body class="sun">
-
-    <nav>
-      <ul class="navUL">
-        <li><a href="/omMeg">Om meg</a></li>
-        <li><a href="/utvikling">Prosjekter-utvikling</a></li>
-        <li class="logoLI"><a href="/"><h1>Portfolio</h1><p>-Martin Bjor Røneid</p></a></li>
-        <li><a href="/design">Prosjekter-design</a></li>
-        <li><a href="/kontakt">Kontakt info</a></li>
-      </ul>
-    </nav>
+  <body>
+    <a href="/" class="go-back-button">
+      <span class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M10 19l-7-7 7-7v4h8c2.8 0 5 2.2 5 5s-2.2 5-5 5h-3v-2h3c1.7 0 3-1.3 3-3s-1.3-3-3-3h-8v4z"
+          />
+        </svg>
+      </span>
+      <span class="text">Tilbake</span>
+    </a>
 
     <div class="actualSun"></div>
 
@@ -55,34 +61,64 @@
     </audio>
 
     <div class="flex2">
-
       <div class="form">
         <h1>Vær-app</h1>
         <h2>I dag:</h2>
         <label for="by"></label>
         <input type="text" id="by" class="input" placeholder="By" />
-  
+
         <div class="infoKonteirer">
           <div class="sun"></div>
-  
+
           <div class="city"></div>
           <div class="weather"></div>
           <div class="degree"></div>
         </div>
       </div>
-  
+
       <div class="info">
         <h2>Vær-app</h2>
-        <p class="infoP">Bla bla bla, yap, yap, yap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere modi iste, nisi minus reiciendis aspernatur officiis impedit rem maxime quo quam perspiciatis excepturi aperiam inventore accusantium, vitae amet qui?
-        Voluptas adipisci qui quas quo totam recusandae amet aliquam incidunt molestiae cupiditate excepturi voluptatem soluta alias omnis expedita reprehenderit pariatur commodi nam, optio ex illum impedit ducimus. Earum, rerum veritatis.
-        Tenetur corrupti facilis fugit consequuntur at quidem illo et quod temporibus assumenda tempore voluptas recusandae iste accusamus reiciendis voluptates, provident laboriosam maxime voluptatum. Iusto accusamus quisquam dolorem ipsam animi praesentium?
-        Fuga delectus, non asperiores illo fugiat praesentium minima dolores a placeat reprehenderit perspiciatis quibusdam aperiam labore sit recusandae corrupti officiis libero in, explicabo tempore. Rerum delectus ab aperiam labore vel!
-        Error veniam odio facilis sequi necessitatibus deserunt, illo aliquid libero voluptates quisquam deleniti doloremque a, voluptatibus soluta ea eum? Nostrum quam voluptatum tenetur necessitatibus eum labore velit accusantium blanditiis laboriosam.
-        Adipisci laborum exercitationem vero fugit fuga expedita ab explicabo incidunt sint delectus commodi, ipsa, placeat enim labore odit. Impedit architecto doloribus magni, aliquam ducimus modi eveniet provident sit! Iusto, neque.</p>
+        <p class="infoP">
+          Hva jeg har lært: API-integrasjon: Lært å integrere og hente data fra
+          eksterne API-er, spesielt vær-API-er. HTTP-forespørsler: Bruk av
+          GET-forespørsler for å hente data fra API-endepunkter.
+          JSON-håndtering: Parsing og behandling av JSON-data for å trekke ut
+          nødvendig informasjon. Feilhåndtering: Implementering av
+          feilhåndtering for å håndtere mislykkede API-kall, som nettverksfeil
+          eller ugyldige svar. Bruk av miljøvariabler: Sikker lagring og bruk av
+          API-nøkler ved hjelp av miljøvariabler for å beskytte sensitive data.
+          Automatisering og planlegging: Implementering av tidsbasert
+          oppdatering av data, som å hente oppdatert værinformasjon med jevne
+          mellomrom. Dataformatering: Presentasjon av værdata på en
+          brukervennlig måte, som å vise temperatur, vindhastighet og værforhold
+          på en forståelig måte. Frontend og Backend utvikling: Kombinere
+          backend-logikk (API-henting) med frontend for visuell presentasjon.
+          Teknologier og verktøy brukt: Programmeringsspråk: Python/JavaScript
+          eller annet relevant språk. Biblioteker: Bruk av requests (for Python)
+          eller fetch/axios (for JavaScript) for å håndtere API-kall.
+          API-leverandører: Brukt tjenester som OpenWeatherMap, WeatherAPI,
+          eller lignende for værdata. Miljøhåndtering: Bruk av dotenv for å lese
+          miljøvariabler. Frontend-teknologier: HTML, CSS, og eventuelt
+          JavaScript-rammeverk som React eller Vue for å bygge grensesnitt.
+          Backend-rammeverk: Flask, Express, eller andre for å lage
+          backend-server som håndterer API-forespørsler. Versjonskontroll: Git
+          og GitHub for versjonskontroll og samarbeid. Hvordan prosjektet
+          fungerer: Brukergrensesnitt: Brukeren går til nettsiden eller appen og
+          søker etter værdata ved å skrive inn en lokasjon. API-forespørsel:
+          Applikasjonen sender en forespørsel til vær-API-et med de nødvendige
+          parametrene (som lokasjon og API-nøkkel). Datahenting: API-et
+          returnerer værdata som temperatur, fuktighet, vindhastighet, og
+          værbeskrivelse i JSON-format. Databehandling: Dataene blir behandlet
+          og formatert til et mer lesbart format som kan vises på skjermen.
+          Presentasjon: De behandlete dataene blir presentert på
+          brukergrensesnittet, ofte med visuelle elementer som ikoner for sol,
+          regn, skyet vær, etc. Feilhåndtering: Hvis det oppstår feil (som feil
+          lokasjon eller API-problemer), vil brukeren få beskjed med en passende
+          feilmelding. Hvis det er noe du vil legge til eller justere, kan jeg
+          gjerne oppdatere informasjonen!
+        </p>
       </div>
     </div>
-
-
 
     <!-- <div class="scedule">
         <h1>Program neste 5 dager:</h1>

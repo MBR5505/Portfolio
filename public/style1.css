@@ -1,0 +1,77 @@
+
+button:hover{
+    color: rgb(40, 34, 34);
+    cursor: pointer;
+}
+
+
+#StyleKonteiner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#CreatedNewList {
+    background-color: rgb(242, 234, 234);
+    border: 5px solid #ce0d0d;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 600px;
+    min-width: 200px;
+}
+
+#unchecked{
+    text-decoration: none;
+    color: black;
+}
+
+#checked{ 
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul {
+    list-style: none; /* Remove default list-style (dots) */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    width: 100%; /* Make the ul take up all available width */
+    flex-direction: column;
+}
+
+li {
+    flex: 1; /* Distribute available space evenly among li elements */
+    padding: 10px; /* Add padding for spacing (adjust as needed) */
+    text-align: center; /* Center-align the content */
+    border: 1px solid #ccc; /* Add a border for visual separation (optional) */
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #901a1a;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+
+
+/* new */
+
+#scrollRightButton {
+
+    background-color: red;
+    padding: 20px;
+    border-radius: 50%;
+
+
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 999; 
+}
+#scrollRightButton:hover{
+    cursor: pointer;
+}
