@@ -1,5 +1,5 @@
 import express from "express";
-import brukere from "../models/brukere.js";
+// import brukere from "../models/brukere.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
@@ -103,35 +103,35 @@ router.post("/signup", (req, res) => {
       return res.status(500).send("Server error while hashing password.");
     }
 
-    // Create a new user instance
-    const bruker = new brukere({
-      brukernavn,
-      epost,
-      rolle: "kunde", // Default role, can be customized
-      passord: hash,
-    });
+  //   // Create a new user instance
+  //   const bruker = new brukere({
+  //     brukernavn,
+  //     epost,
+  //     rolle: "kunde", // Default role, can be customized
+  //     passord: hash,
+  //   });
 
-    // Save the user to the database
-    bruker
-      .save()
-      .then(() => {
-        res.redirect("/login");
-      })
-      .catch((err) => {
-        console.error("Error saving user:", err.message);
+  //   // Save the user to the database
+  //   bruker
+  //     .save()
+  //     .then(() => {
+  //       res.redirect("/login");
+  //     })
+  //     .catch((err) => {
+  //       console.error("Error saving user:", err.message);
 
-        // Handle specific validation errors
-        if (err.errors) {
-          if (err.errors.brukernavn)
-            console.log("Brukernavn error:", err.errors.brukernavn.message);
-          if (err.errors.epost)
-            console.log("Epost error:", err.errors.epost.message);
-          if (err.errors.passord)
-            console.log("Passord error:", err.errors.passord.message);
-        }
-        res.status(400).render("404", { error: "User validation failed." });
-      });
-  });
+  //       // Handle specific validation errors
+  //       if (err.errors) {
+  //         if (err.errors.brukernavn)
+  //           console.log("Brukernavn error:", err.errors.brukernavn.message);
+  //         if (err.errors.epost)
+  //           console.log("Epost error:", err.errors.epost.message);
+  //         if (err.errors.passord)
+  //           console.log("Passord error:", err.errors.passord.message);
+  //       }
+  //       res.status(400).render("404", { error: "User validation failed." });
+  //     });
+  // });
 });
 
 router.get("/login", async (req, res) => {
@@ -156,7 +156,8 @@ router.post("/login", async (req, res) => {
   const { brukernavn, passord, remember } = req.body;
 
   try {
-    const check = await brukere.findOne({ brukernavn });
+    // const check = await brukere.findOne({ brukernavn });
+    const check;
     if (!check) {
       const errorMessage = "Bruker finnes ikke";
       console.log(errorMessage);
