@@ -6,10 +6,10 @@
 
     --primary-color: #d4a373;
     --secondary-color: #ffffff;
-    --tertiary-color: #e9edc9;
-    --quaternary-color: #fefae0;
+    --tertiary-color: #b3ba7d;
+    --quaternary-color: #b7af7c;
 }
 
-body{
-    background-color: var(--background-color)
+@media (max-width: 810px) {
+    
 }

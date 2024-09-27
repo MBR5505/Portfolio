@@ -97,3 +97,10 @@ nav ul li a {
 .right-box::-webkit-scrollbar-track {
     background: var(--quaternary-color);
 }
+
+
+#attest{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

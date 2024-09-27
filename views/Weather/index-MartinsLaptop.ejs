@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="sandbox.js" ></script> -->
+    <script src="forecast.js" defer></script>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="/Weather/clouds.css">
+
+    <!-- <script src="proxyServer.js"></script> -->
+</head>
+
+<div class="actualSun"></div>
+<body class="sun">
+    <div id="background-wrap">
+        <div class="x1">
+          <div class="cloud"></div>
+          <p class="cloudTextCity"></p>
+        </div>
+        <div class="x2">
+          <div class="cloud"></div>
+          <p class="cloudTextWeather"></p>
+        </div>
+        <div class="x3">
+          <div class="cloud"></div>
+          <p class="cloudTextDegree"></p>
+        </div>
+        <div class="x4">
+          <div class="cloud"></div>
+          <p class="cloudTextCity"></p>
+
+        </div>
+        <div class="x5">
+          <div class="cloud"></div>
+          <p class="cloudTextWeather"></p>
+        </div>
+      </div>
+      
+      
+      <audio id="bg-music" autoplay loop preload="auto" q_auto>
+      </audio>
+      
+      <audio id="rain">
+        <source src="./musikk/rain-and-thunder-nature-sounds-7803.mp3" type="audio/mpeg">
+      </audio>
+      
+      
+      <!-- <button class="dag">Dag</button>
+        <button class="uke">Uke</button> -->
+        
+        <div class="form">
+          <h1>Vær-app</h1>
+          <h2>I dag:</h2>
+          <label for="by"></label>
+        <input type="text" id="by" class="input" placeholder="By">
+        <!-- <button id="søk" >Søk</button> -->
+
+        <div class="infoKonteirer">
+            <div class="sun"></div>
+             
+            <div class="city"></div>
+            <div class="weather"></div>
+            <div class="degree"></div>
+        </div>
+    </div>
+
+    <!-- <div class="scedule">
+        <h1>Program neste 5 dager:</h1>
+    </div> -->
+</body>
